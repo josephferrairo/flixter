@@ -19,7 +19,7 @@ class Instructor::SectionsController < ApplicationController
       render :text => "Unauthorized", :status => :unauthorized
     end
   end
-  
+
 
   helper_method :current_course
   def current_course
