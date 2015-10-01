@@ -7,6 +7,8 @@ gem 'rails'
 gem 'pg'
 
 gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
