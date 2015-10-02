@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20151001040622) do
   enable_extension "plpgsql"
 
   create_table "courses", force: :cascade do |t|
-    t.string   "title",       limit: 255
+    t.string   "title"
     t.text     "description"
     t.decimal  "cost"
     t.integer  "user_id"
@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20151001040622) do
   add_index "courses", ["user_id"], name: "index_courses_on_user_id", using: :btree
 
   create_table "lessons", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.string   "subtitle",   limit: 255
+    t.string   "title"
+    t.string   "subtitle"
     t.integer  "section_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -38,19 +38,8 @@ ActiveRecord::Schema.define(version: 20151001040622) do
 
   add_index "lessons", ["section_id"], name: "index_lessons_on_section_id", using: :btree
 
-  create_table "photos", force: :cascade do |t|
-    t.string   "image"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "course_id"
-    t.integer  "user_id"
-  end
-
-  add_index "photos", ["course_id"], name: "index_photos_on_course_id", using: :btree
-  add_index "photos", ["user_id", "course_id"], name: "index_photos_on_user_id_and_course_id", using: :btree
-
   create_table "sections", force: :cascade do |t|
-    t.string   "title",      limit: 255
+    t.string   "title"
     t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -59,18 +48,18 @@ ActiveRecord::Schema.define(version: 20151001040622) do
   add_index "sections", ["course_id"], name: "index_sections_on_course_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  limit: 255, default: "", null: false
-    t.string   "encrypted_password",     limit: 255, default: "", null: false
-    t.string   "reset_password_token",   limit: 255
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                      default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.datetime "created_at",                                      null: false
-    t.datetime "updated_at",                                      null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

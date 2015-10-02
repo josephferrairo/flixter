@@ -1,5 +1,5 @@
 class Instructor::LessonsController < ApplicationController
-  before_action :authenticate_user!
+  #before_action :authenticate_user!
   before_action :require_authorized_for_current_section
 
   def new
@@ -18,7 +18,7 @@ end
       return render :text => 'Unauthorized', :status => :unauthorized
     end
   end
-  
+
 
 helper_method :current_section
 def current_section
