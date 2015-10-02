@@ -5,7 +5,7 @@ gem 'rails'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
-
+gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
