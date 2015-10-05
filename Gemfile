@@ -8,8 +8,9 @@ gem 'pg'
 gem 'mini_magick'
 gem 'carrierwave-aws'
 gem 'carrierwave'
-gem 'fog'
+#gem 'fog'
 gem 'figaro'
+gem 'stripe'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
