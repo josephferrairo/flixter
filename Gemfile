@@ -11,6 +11,7 @@ gem 'carrierwave'
 #gem 'fog'
 gem 'figaro'
 gem 'stripe'
+gem 'ranked-model'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
