@@ -17,7 +17,7 @@ gem 'ranked-model'
 gem 'sass-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
-
+gem 'jquery-ui-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
