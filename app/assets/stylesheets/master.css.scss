@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .frosty {
   background:rgba(0,0,0, 0.5);
-    color:white;
+  color:white;
 }
 
 .frosty h1 {
@@ -50,11 +50,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 body {
   background: url('star.png');
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin:0;
-	padding:0;
+  margin:0;
+  padding:0;
 }
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -106,4 +106,38 @@ h1, h2, h3, h4, h5, h6 {
 .lesson a b {
   font-weight: 100;
   font-size:25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin:20px;
+}
+
+ul .header {
+  font-size:25px;
+}
+
+ul .header .glyphicon {
+  font-size:20px;
+}
+
+.lessons li {
+  background:black;
+  color:white;
+  margin:10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding:8px;
+  font-size:15px;
+  font-weight:100;
+}
+
+.lessons li p {
+  margin:0;
 }
