@@ -1,7 +1,3 @@
-== README
-This is a Udemy clone app that I built while in The Firehose Project. This is the third project I worked on
-* ...
+== FLIXTER
+This is a Udemy clone app that I built while in The Firehose Project. This is the third app I built.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
